@@ -717,6 +717,13 @@ body {
 	height: 475px
 }
 
+@media (max-width: 767px) {
+	.intro2 {
+		height: auto !important;
+		margin-top: 30px !important;
+	}
+}
+
 @media (min-width: 768px) {
 	.intro--banner::before {
 		content: "";
@@ -1897,6 +1904,13 @@ body {
     height: 0;
     padding-bottom: 80%;
 }
+
+@media (max-width: 767px) {
+	.iframe-container {
+		width: 100vw;
+	}
+}
+
 .video {
     position: absolute;
     top: 0;
