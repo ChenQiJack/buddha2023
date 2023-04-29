@@ -1869,7 +1869,7 @@ body {
 .outer-nav>li::before {
 	content: "";
 	position: absolute;
-	top: 50%;
+	top: 88%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -25%);
 	transform: translate(-50%, -25%);
@@ -1946,22 +1946,30 @@ body {
     max-width: 350px;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-	h3 {
-		font-size: 17px !important;
+h3 {
+	font-size: 20px !important;
+}
+
+p, th, td {
+	font-size: 16px !important;
+}
+
+@media (min-width: 577px) {
+	.desktop-mode {
+		display: unset !important;
 	}
 
-	p, th, td {
-		font-size: 15px !important;
+	.mobile-mode {
+		display: none !important;
 	}
 }
 
-@media (min-width: 1025px) {
-	h3 {
-		font-size: 20px !important;
+@media (max-width: 576px) {
+	.desktop-mode {
+		display: none !important;
 	}
 
-	p, th, td {
-		font-size: 16px !important;
+	.mobile-mode {
+		display: unset !important;
 	}
 }
